@@ -1,0 +1,120 @@
+{
+  "name": "paper_cut",
+  "label": "Paper Cut",
+  "description": "Layered craft paper, die-cut stickers, torn strips, stop-motion animated on twos (12fps). Warm, tactile, handmade.",
+  "palette": {
+    "bg": "#F1E8D8",
+    "bgAlt": "#E9DCC5",
+    "bgDark": "#26283B",
+    "ink": "#1F1A17",
+    "inkSoft": "#5E544A",
+    "onDark": "#FFF8EC",
+    "onDarkSoft": "#C9C2D6",
+    "accent": "#EE6A4C",
+    "accent2": "#3E8EDE",
+    "highlight": "#F5C243",
+    "onHighlight": "#1F1A17",
+    "surface": "#FFFCF5",
+    "surfaceAlt": "#F7EFE0",
+    "line": "#3A302A",
+    "shadow": "#4A3420",
+    "papers": [
+      "#FFFDF6",
+      "#F5C243",
+      "#EE6A4C",
+      "#3E8EDE",
+      "#6DBE7D",
+      "#A98BE5"
+    ]
+  },
+  "typography": {
+    "fontFamily": null,
+    "fontFile": null,
+    "latinFamily": "'Nunito', 'Helvetica Neue', Arial",
+    "latinFile": "fonts/style/Nunito-VF.ttf",
+    "monoFamily": "'JetBrains Mono', 'Fira Code', Menlo, Consolas",
+    "setup": {
+      "weight": 650,
+      "rem": 3.25
+    },
+    "focus": {
+      "weight": 900,
+      "rem": 4.75
+    },
+    "hero": {
+      "weight": 950,
+      "rem": 7.25
+    },
+    "mega": {
+      "weight": 950,
+      "rem": 9.25
+    },
+    "body": {
+      "weight": 600,
+      "rem": 2.0
+    },
+    "caption": {
+      "weight": 700,
+      "rem": 1.5
+    },
+    "lineHeight": 1.25
+  },
+  "motion": {
+    "stepFps": 12,
+    "boil": 0.9,
+    "overshoot": 1.9,
+    "enterDur": 0.42,
+    "stagger": 0.08,
+    "cameraPush": 0.012
+  },
+  "surface": {
+    "radius": 22,
+    "roughness": 1.4,
+    "grain": 0.55,
+    "layerOffset": 12,
+    "shadowDepth": 7,
+    "roughEdges": true
+  },
+  "logo": {
+    "dieCut": 9,
+    "lift": 7,
+    "texture": 0.55,
+    "layerLift": 2.2
+  },
+  "transitions": {
+    "first": "pop",
+    "cycle": [
+      "paper-up",
+      "tear",
+      "paper-left",
+      "stack",
+      "tear-side",
+      "paper-right"
+    ],
+    "durIn": 0.5,
+    "durOut": 0.5,
+    "stepped": true
+  },
+  "darkScenes": "accent",
+  "sfx": {
+    "remap": {
+      "whoosh/smooth_and_fast_whoosh": "paper/slide_1",
+      "whoosh/cinematic_fast_normal_whoosh": "paper/slide_2",
+      "whoosh/high_and_fast_whoosh": "paper/slide_3",
+      "whoosh/deep_short": "paper/slide_1",
+      "shutter/smooth_camera_shutter": "paper/tap_1",
+      "shutter/little_bit_hard_camera_shutter": "paper/tap_2",
+      "shutter/camera_shutter": "paper/tap_1",
+      "pop/sweet_ui_open": "paper/flap",
+      "misc/stamp": "paper/slap",
+      "whoosh/smooth_like_a_butter_whoosh": "paper/tear"
+    },
+    "cutBoom": false,
+    "musicMood": "bright"
+  },
+  "assets": {
+    "propPrompt": "Handcrafted layered paper-cut diorama of <OBJECT>, made of 3-5 stacked sheets of matte craft paper with visible fiber texture and slightly uneven scissor-cut edges, soft realistic shadows between paper layers, palette limited to cream #FFFDF6, mustard #F5C243, tomato #EE6A4C, cornflower #3E8EDE, sage #6DBE7D, lilac #A98BE5, isolated centered on pure flat white #FFFFFF background, no text, no letters, no logos, no watermark, square 1:1, studio lighting from top-left.",
+    "screenshotTreatment": "printed-card",
+    "cutoutGrade": "keep-color"
+  }
+}

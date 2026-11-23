@@ -1,0 +1,103 @@
+{
+  "name": "studio_mono",
+  "label": "Studio Mono (v1 editorial)",
+  "description": "Monochrome editorial studio: spotlit paper, blueprint grid, crisp white cards, black pill highlights, whip & zoom transitions. Smooth 30fps.",
+  "palette": {
+    "bg": "#D9D9D4",
+    "bgAlt": "#E8E8E4",
+    "bgDark": "#141416",
+    "ink": "#121212",
+    "inkSoft": "#5E5E5E",
+    "onDark": "#F5F5F7",
+    "onDarkSoft": "#A9A9AE",
+    "accent": "#121212",
+    "accent2": "#6B6B6B",
+    "highlight": "#121212",
+    "onHighlight": "#FFFFFF",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#F4F4F2",
+    "line": "#121212",
+    "shadow": "#000000",
+    "papers": [
+      "#FFFFFF",
+      "#121212",
+      "#6B6B6B",
+      "#D5D5D0",
+      "#3A3A3A",
+      "#A0A0A0"
+    ]
+  },
+  "typography": {
+    "fontFamily": null,
+    "fontFile": null,
+    "latinFamily": "'Inter', 'Helvetica Neue', Arial",
+    "latinFile": "fonts/style/Inter-VF.ttf",
+    "monoFamily": "'JetBrains Mono', Menlo, Consolas",
+    "setup": {
+      "weight": 500,
+      "rem": 3.375
+    },
+    "focus": {
+      "weight": 900,
+      "rem": 4.625
+    },
+    "hero": {
+      "weight": 950,
+      "rem": 7.5
+    },
+    "mega": {
+      "weight": 950,
+      "rem": 9.5
+    },
+    "body": {
+      "weight": 500,
+      "rem": 2.0
+    },
+    "caption": {
+      "weight": 600,
+      "rem": 1.5
+    },
+    "lineHeight": 1.2
+  },
+  "motion": {
+    "stepFps": null,
+    "boil": 0,
+    "overshoot": 1.4,
+    "enterDur": 0.38,
+    "stagger": 0.06,
+    "cameraPush": 0.022
+  },
+  "surface": {
+    "radius": 26,
+    "gridOpacity": 0.8
+  },
+  "logo": {
+    "capsuleOnDark": true,
+    "shadow": 6
+  },
+  "transitions": {
+    "first": "zoom-through",
+    "cycle": [
+      "continuity",
+      "whip-left",
+      "continuity",
+      "whip-up",
+      "zoom-through",
+      "whip-right"
+    ],
+    "durIn": 0.5,
+    "durOut": 0.44,
+    "stepped": false
+  },
+  "darkScenes": "mixed",
+  "sfx": {
+    "remap": {},
+    "cutBoom": true,
+    "musicMood": "editorial"
+  },
+  "assets": {
+    "propPrompt": "Minimalist high-fashion industrial design studio product render of <OBJECT>, crafted in frosted glass and brushed aluminium, isolated centered on a pure flat solid white (#FFFFFF) background, crisp soft studio rim lighting, strictly achromatic grayscale palette, zero color tint, no text, no logos, no watermark, square 1:1.",
+    "screenshotTreatment": "browser-window",
+    "cutoutGrade": "monochrome"
+  }
+}

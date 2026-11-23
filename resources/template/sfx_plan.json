@@ -1,0 +1,22 @@
+{
+  "_comment": "SFX Plan: Manual cues are OPTIONAL. The built-in Auto-SFX Engine automatically scans src/scenes.tsx components (<BanStamp>, <CautionWarningBadge>, <DarkPillStack>, <NodeNetwork>, etc.) and timeline.json words for semantic keywords (bans, warnings, money, tech, metrics). Any manual cues defined here take priority.",
+  "music": {
+    "mode": "none",
+    "bpm": 110.0,
+    "duck_under_voice": 0.58
+  },
+  "sub_cuts": [],
+  "ribbon_draws": [],
+  "flashes": [],
+  "diagrams": [],
+  "stamps": [],
+  "warnings": [],
+  "money": [],
+  "hero_words": [],
+  "strikethroughs": [],
+  "counters": [],
+  "pills": [],
+  "chips": [],
+  "buttons": [],
+  "mechanics": []
+}

@@ -1,0 +1,26 @@
+{
+  "_note": "Select in user_inputs/brand.json: \"fontFa\": \"<key>\", \"fontLatin\": \"<key>\" (null = defaults: YekanBakh + the style's Latin font). digitsOk=false -> Persian digits are drawn with Vazirmatn automatically.",
+  "fa": {
+    "YekanBakh":   {"family": "YekanBakhFaNum", "file": "fa/YekanBakhFaNum-VF.woff2", "weights": "100 950", "digitsOk": true,  "vibe": "default v1 — modern, bold, very readable", "license": "commercial (user-supplied, from v1)"},
+    "Vazirmatn":   {"family": "Vazirmatn", "file": "fa/Vazirmatn-VF.ttf", "weights": "100 900", "digitsOk": true, "vibe": "clean neutral sans, great for long text & numbers", "license": "OFL-1.1"},
+    "Lalezar":     {"family": "Lalezar", "file": "fa/Lalezar-Regular.ttf", "weights": "400", "digitsOk": true, "vibe": "heavy poster display — hooks & titles only", "license": "OFL-1.1"},
+    "ReemKufi":    {"family": "Reem Kufi", "file": "fa/ReemKufi-VF.ttf", "weights": "400 700", "digitsOk": true, "vibe": "geometric kufi — editorial, techy", "license": "OFL-1.1"},
+    "NotoKufi":    {"family": "Noto Kufi Arabic", "file": "fa/NotoKufiArabic-VF.ttf", "weights": "100 900", "digitsOk": true, "vibe": "wide geometric kufi, strong headlines", "license": "OFL-1.1"},
+    "ElMessiri":   {"family": "El Messiri", "file": "fa/ElMessiri-VF.ttf", "weights": "400 700", "digitsOk": false, "vibe": "elegant, magazine / luxury", "license": "OFL-1.1"},
+    "Lemonada":    {"family": "Lemonada", "file": "fa/Lemonada-VF.ttf", "weights": "300 700", "digitsOk": false, "vibe": "rounded, playful — pairs with paper_cut", "license": "OFL-1.1"},
+    "Changa":      {"family": "Changa", "file": "fa/Changa-VF.ttf", "weights": "200 800", "digitsOk": false, "vibe": "condensed, sporty/news — pairs with vox_collage", "license": "OFL-1.1"},
+    "Baloo":       {"family": "Baloo Bhaijaan 2", "file": "fa/BalooBhaijaan2-VF.ttf", "weights": "400 800", "digitsOk": false, "vibe": "soft & friendly, kids/edu", "license": "OFL-1.1"}
+  },
+  "latin": {
+    "Oswald":       {"family": "Oswald", "file": "latin/Oswald-VF.ttf", "weights": "200 700", "vibe": "condensed news (vox_collage default)", "license": "OFL-1.1"},
+    "Nunito":       {"family": "Nunito", "file": "latin/Nunito-VF.ttf", "weights": "200 1000", "vibe": "rounded friendly (paper_cut default)", "license": "OFL-1.1"},
+    "Inter":        {"family": "Inter", "file": "latin/Inter-VF.ttf", "weights": "100 900", "vibe": "neutral UI (studio_mono default)", "license": "OFL-1.1"},
+    "Anton":        {"family": "Anton", "file": "latin/Anton-Regular.ttf", "weights": "400", "vibe": "ultra-condensed impact headlines", "license": "OFL-1.1"},
+    "BebasNeue":    {"family": "Bebas Neue", "file": "latin/BebasNeue-Regular.ttf", "weights": "400", "vibe": "tall caps, cinematic", "license": "OFL-1.1"},
+    "ArchivoBlack": {"family": "Archivo Black", "file": "latin/ArchivoBlack-Regular.ttf", "weights": "400", "vibe": "wide heavy grotesk, brutalist", "license": "OFL-1.1"},
+    "SpaceGrotesk": {"family": "Space Grotesk", "file": "latin/SpaceGrotesk-VF.ttf", "weights": "300 700", "vibe": "techy grotesk, AI/dev", "license": "OFL-1.1"},
+    "Playfair":     {"family": "Playfair Display", "file": "latin/PlayfairDisplay-VF.ttf", "weights": "400 900", "vibe": "high-contrast editorial serif", "license": "OFL-1.1"},
+    "DMSerif":      {"family": "DM Serif Display", "file": "latin/DMSerifDisplay-Regular.ttf", "weights": "400", "vibe": "classic magazine serif", "license": "OFL-1.1"},
+    "SpecialElite": {"family": "Special Elite", "file": "latin/SpecialElite-Regular.ttf", "weights": "400", "vibe": "typewriter — collage labels, notes", "license": "Apache-2.0"}
+  }
+}

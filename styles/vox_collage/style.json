@@ -1,0 +1,84 @@
+{
+  "name": "vox_collage",
+  "label": "Vox Collage (paper-cut editorial)",
+  "description": "Vox-style editorial paper collage: crumpled paper, torn edges with white core, newsprint strips, engraved/halftone cut-outs with die-cut borders, masking tape, one loud accent, stop-motion on twos.",
+  "palette": {
+    "bg": "#E8E1D3",
+    "bgAlt": "#D9CFBC",
+    "bgDark": "#1B1A19",
+    "ink": "#151413",
+    "inkSoft": "#4A4640",
+    "onDark": "#F4EFE4",
+    "onDarkSoft": "#BDB6A8",
+    "accent": "#D3221B",
+    "accent2": "#E3B23C",
+    "highlight": "#D3221B",
+    "onHighlight": "#FFFFFF",
+    "surface": "#F4EFE4",
+    "surfaceAlt": "#E8E1D3",
+    "line": "#151413",
+    "shadow": "#120D08",
+    "papers": ["#F7F2E8", "#D3221B", "#151413", "#E3B23C", "#C9C1B1", "#7A746B"]
+  },
+  "palettePresets": {
+    "red_noir": {},
+    "neon_yellow": {"accent": "#F2E205", "highlight": "#F2E205", "onHighlight": "#151413", "accent2": "#9BF20C", "bg": "#2A2928", "bgAlt": "#3A3836", "papers": ["#F7F2E8", "#F2E205", "#151413", "#9BF20C", "#C9C1B1", "#7A746B"]},
+    "swiss_mustard": {"accent": "#D23B24", "accent2": "#D9A12B", "highlight": "#D9A12B", "onHighlight": "#151413", "bg": "#EFE9D9", "papers": ["#F7F2E8", "#D23B24", "#151413", "#D9A12B", "#C9C1B1", "#7A746B"]},
+    "newsroom_maroon": {"accent": "#7E1416", "highlight": "#7E1416", "bg": "#E6E0D2", "bgDark": "#141414", "papers": ["#F7F2E8", "#7E1416", "#151413", "#C9A227", "#C9C1B1", "#7A746B"]},
+    "tech_blue": {"accent": "#1F4BFF", "highlight": "#1F4BFF", "accent2": "#FF5A1F", "papers": ["#F7F2E8", "#1F4BFF", "#151413", "#FF5A1F", "#C9C1B1", "#7A746B"]}
+  },
+  "typography": {
+    "fontFamily": null,
+    "fontFile": null,
+    "latinFamily": "'Oswald', 'Arial Narrow', Arial",
+    "latinFile": "fonts/style/Oswald-VF.ttf",
+    "monoFamily": "'Courier Prime', 'Courier New', monospace",
+    "setup": {"weight": 650, "rem": 3.25},
+    "focus": {"weight": 900, "rem": 4.875},
+    "hero": {"weight": 950, "rem": 7.5},
+    "mega": {"weight": 950, "rem": 9.5},
+    "body": {"weight": 600, "rem": 2.0},
+    "caption": {"weight": 700, "rem": 1.5},
+    "lineHeight": 1.2
+  },
+  "motion": {"stepFps": 12, "boil": 0.8, "overshoot": 1.5, "enterDur": 0.36, "stagger": 0.07, "cameraPush": 0.03},
+  "surface": {"radius": 0, "tearAmp": 7, "tape": true, "halftone": 0.9, "shadowDepth": 6, "newsprint": 1},
+  "logo": {"dieCut": 10, "lift": 6},
+  "transitions": {"first": "zoom-in", "cycle": ["tear-wipe", "slam-left", "flash", "slam-up", "tear-wipe", "slam-right"], "durIn": 0.45, "durOut": 0.45, "stepped": true},
+  "darkScenes": "mixed",
+  "sfx": {
+    "remap": {
+      "whoosh/smooth_and_fast_whoosh": "paper/slide_1",
+      "whoosh/cinematic_fast_normal_whoosh": "paper/tear",
+      "whoosh/high_and_fast_whoosh": "paper/slide_2",
+      "whoosh/deep_short": "paper/slide_3",
+      "shutter/smooth_camera_shutter": "paper/tap_1",
+      "shutter/little_bit_hard_camera_shutter": "paper/slap",
+      "shutter/camera_shutter": "paper/tap_2",
+      "pop/sweet_ui_open": "paper/flap",
+      "misc/stamp": "paper/slap",
+      "whoosh/smooth_like_a_butter_whoosh": "paper/tear"
+    },
+    "cutBoom": true,
+    "musicMood": "noir"
+  },
+  "assets": {
+    "generator": "openai",
+    "styleBlock": "Vintage editorial collage cut-out in the style of a Vox explainer video: detailed black-and-white copperplate ENGRAVING / etching with fine crosshatching and halftone dots, high contrast, printed-on-paper look with subtle paper grain. Only ONE spot color allowed: {ACCENT_NAME} ({ACCENT}) used sparingly on a single key element; everything else strictly black ink on off-white paper (#F4EFE4).",
+    "prompts": {
+      "cutout": "{STYLE} Subject: {SUBJECT}. {ACCENT_RULE} Isolated single object, centered, fully visible with generous margin, clean silhouette suitable for a die-cut sticker, {BG}. No text, no letters, no logos, no watermark, no frame, no drop shadow.",
+      "portrait": "{STYLE} Subject: {SUBJECT}, shown as an anonymous engraved figure (not a real or identifiable person), three-quarter view, bust crop. {ACCENT_RULE} {BG}. No text, no logos, no watermark.",
+      "background": "{STYLE} Full-bleed background plate: {SUBJECT}. Composition leaves the central area calm for overlaid typography; crumpled paper texture visible. Vertical 2:3. No text, no logos, no watermark.",
+      "texture": "Flat top-down scan of {SUBJECT}, evenly lit, no perspective, no objects, seamless-looking, high detail paper fibers. No text, no logos."
+    },
+    "accentRule": "Paint ONLY {ACCENT_ELEMENT} in flat {ACCENT_NAME} ({ACCENT}) ink; all other parts black-and-white engraving.",
+    "noAccentRule": "Strictly black-and-white engraving, no color at all.",
+    "transparentBg": "transparent background",
+    "chromaBg": "on a perfectly flat solid pure chroma-key background {CHROMA} with no gradient, no shadow and no texture",
+    "chroma": "#00FF00",
+    "post": {"mode": "ink_paper", "ink": "#151413", "paper": "#F4EFE4", "recolorAccent": true, "contrast": 1.12, "maxDim": 1400},
+    "propPrompt": "see assets.prompts.cutout",
+    "screenshotTreatment": "printed-card",
+    "cutoutGrade": "keep-color"
+  }
+}

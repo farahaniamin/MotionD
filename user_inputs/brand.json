@@ -1,0 +1,19 @@
+{
+  "style": "vox_collage",
+  "palettePreset": "red_noir",
+  "wordmark": "FRONTBAZ",
+  "outroTagline": "معرفی بهترین ابزارهای هوش مصنوعی",
+  "outroFooter": "FRONTBAZ · AI TOOLS",
+  "language": "fa",
+  "fontFa": null,
+  "fontLatin": null,
+  "fontFamily": "YekanBakhFaNum",
+  "fontFile": "fonts/YekanBakhFaNum-VF.woff2",
+  "styleOverrides": {},
+  "voice": {
+    "engine": "edge-tts",
+    "voiceName": "fa-IR-FaridNeural",
+    "rate": "+16%",
+    "pitch": "-3Hz"
+  }
+}

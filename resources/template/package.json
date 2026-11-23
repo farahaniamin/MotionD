@@ -1,0 +1,27 @@
+{
+  "name": "motion-reel",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "sync": "python3 tools/sync_inputs.py",
+    "style": "python3 tools/set_style.py",
+    "logos": "python3 tools/logo_fetch.py",
+    "qa": "python3 tools/qa_check.py",
+    "scripts-pre": "python3 tools/export_srt.py --from-beats beats.json --out-dir exports --name script",
+    "voice": "python3 tools/generate_voice.py",
+    "mix": "python3 tools/build_mix.py",
+    "stills": "python3 tools/render_reel.py --stills-only",
+    "render": "python3 tools/render_reel.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.300",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.300"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.5.0"
+  }
+}
